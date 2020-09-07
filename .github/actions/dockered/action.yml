@@ -1,0 +1,5 @@
+name: 'dockered'
+description: 'Test the docker envs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

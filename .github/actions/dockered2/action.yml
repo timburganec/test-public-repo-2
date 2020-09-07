@@ -3,3 +3,6 @@ description: 'Test the docker envs'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+inputs:
+  meh:
+    required: true

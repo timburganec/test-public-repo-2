@@ -8,8 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: |
-        cd .github/actions
-        ls -lha
+        cat .github/actions/dockered/action.yml
     - uses: ./.github/actions/dockered
       env:
         MEH: ${{secrets.MEH}}

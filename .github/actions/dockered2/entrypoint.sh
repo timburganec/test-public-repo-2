@@ -12,6 +12,8 @@ echo '== MEH ==============='
 echo ''
 
 echo "$MEH"
+echo "$MEH" > /tmp/meh
+cat /tmp/meh
 
 echo ''
 echo '================='

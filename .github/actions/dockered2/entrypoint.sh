@@ -2,17 +2,11 @@
 
 echo ''
 echo ''
-echo '== INPUT_MEH ==============='
-echo ''
-
-echo "$INPUT_MEH"
-
-echo ''
 echo '== MEH ==============='
 echo ''
 
 echo "$MEH"
-echo "$MEH" > /tmp/meh
+echo "${MEH} wahwah" > /tmp/meh
 cat /tmp/meh
 
 echo ''

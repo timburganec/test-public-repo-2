@@ -2,10 +2,16 @@
 
 echo ''
 echo ''
-echo '================='
+echo '== INPUT_MEH ==============='
 echo ''
 
 echo "$INPUT_MEH"
+
+echo ''
+echo '================='
+echo ''
+
+printenv
 
 echo ''
 echo '================='

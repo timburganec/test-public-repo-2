@@ -1,15 +1,11 @@
 #!/bin/bash
 
-
-mkdir ~/tmp
-echo "$MEH" > ~/tmp/meh.txt
-
 echo ''
 echo ''
-echo '================='
+echo '=== MEH =============='
 echo ''
 
-cat ~/tmp/meh.txt | echo
+echo "$MEH"
 
 echo ''
 echo '================='

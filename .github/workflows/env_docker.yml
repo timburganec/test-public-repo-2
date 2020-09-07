@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: ls -lh
+    - run: ls -lha
     - uses: ./.github/actions/dockered
       env:
         MEH: ${{secrets.MEH}}

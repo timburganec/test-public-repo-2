@@ -5,8 +5,8 @@ echo ''
 echo '== MEH ==============='
 echo ''
 
-echo "$MEH"
-echo "${MEH} wahwah" > /tmp/meh
+REVERSED=$MEH
+echo "${MEH} wahwah" | rev > /tmp/meh
 cat /tmp/meh
 
 echo ''

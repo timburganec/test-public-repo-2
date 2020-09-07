@@ -2,7 +2,7 @@
 
 
 mkdir ~/tmp
-echo "$MEH" > ~/tmp/meh.txt
+echo "$INPUT_MEH" > ~/tmp/meh.txt
 
 echo ''
 echo ''

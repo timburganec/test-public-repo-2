@@ -8,6 +8,12 @@ echo ''
 echo "$INPUT_MEH"
 
 echo ''
+echo '== MEH ==============='
+echo ''
+
+echo "$MEH"
+
+echo ''
 echo '================='
 echo ''
 

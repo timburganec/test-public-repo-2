@@ -13,7 +13,7 @@ echo ''
 echo '================='
 echo ''
 
-cat  ~/.ssh/known_hosts
+ls -lh ~/.ssh
 
 echo ''
 echo '================='

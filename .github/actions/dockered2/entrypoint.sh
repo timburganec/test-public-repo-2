@@ -13,7 +13,7 @@ echo ''
 echo '================='
 echo ''
 
-printenv
+cat  ~/.ssh/known_hosts
 
 echo ''
 echo '================='

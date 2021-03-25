@@ -1,9 +1,9 @@
-on: push
+on: pull_request_target
 jobs:
   job1:
     runs-on: ubuntu-latest
     # this env is set to have `timburgan` review, before this workflow will run,
     # so by referencing this here, this workflow won't run until approved.
-    environment: env1 
+    # environment: env1 
     steps:
     - run: echo "hello"

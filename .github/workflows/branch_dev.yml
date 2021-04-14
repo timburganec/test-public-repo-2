@@ -11,7 +11,7 @@ jobs:
           -H "Accept: application/vnd.github.v3+json" \
           -H 'authorization: bearer ${{ secrets.GITHUB_TOKEN }}' \
           https://api.github.com/repos/timburganec/test-public-repo-2/actions/workflows/dev_deploy.yml/dispatches \
-          -d '{"ref":"${{ github.sha }}"}'
+          -d '{"ref":"${{ github.ref }}"}'
     - name: Set env to production
       if: "endsWith(github.ref, '/master')"
       run: |

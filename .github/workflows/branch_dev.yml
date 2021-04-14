@@ -6,7 +6,7 @@ jobs:
     - name: Set env to staging
       if: "!endsWith(github.ref, '/master')"
       run: |
-        curl \
+        curl -v \
           -X POST \
           -H "Accept: application/vnd.github.v3+json" \
           -H 'authorization: bearer ${{ secrets.GITHUB_TOKEN }}' \

@@ -3,8 +3,6 @@ on: push
 jobs:
   job:
     runs-on: ubuntu-latest
-    environment: "${{ github.ref }}"
     steps:
-    - run: echo "S3_BUCKET=dev" >> $GITHUB_ENV
+    - run: echo "S3_BUCKET=${{ secrets.MEH }}" >> $GITHUB_ENV
     - run: echo $S3_BUCKET
-    - run: echo "${{ github.sha }}"

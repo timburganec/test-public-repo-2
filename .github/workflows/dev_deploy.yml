@@ -1,8 +1,0 @@
-# dev_deploy.yml
-on: push
-jobs:
-  job:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo "S3_BUCKET=${{ secrets.MEH }}" >> $GITHUB_ENV
-    - run: echo $S3_BUCKET

@@ -1,18 +1,6 @@
-on: push
+on: pull_request
 jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-    - name: Set env to staging
-      if: "!endsWith(github.ref, '/master')"
-      run: |
-        curl -v \
-          -X POST \
-          -H "Accept: application/vnd.github.v3+json" \
-          -H 'authorization: bearer ${{ secrets.GITHUB_TOKEN }}' \
-          https://api.github.com/repos/timburganec/test-public-repo-2/actions/workflows/dev_deploy.yml/dispatches \
-          -d '{"ref":"${{ github.ref }}"}'
-    - name: Set env to production
-      if: "endsWith(github.ref, '/master')"
-      run: |
-        echo "S3_BUCKET=prod"
+    - run: echo "Hello Tim"
